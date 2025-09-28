@@ -108,6 +108,7 @@ footer {
     text-align: center;
 }
 
+/* Hide sections other than the homepage on mobile */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -134,5 +135,88 @@ footer {
     footer {
         text-align: center;
         padding: 15px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .menu-toggle.active + nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main > section {
+        display: none;
+    }
+
+    main > section#hero {
+        display: block;
+    }
+
+    /* Mobile Tab Navigation */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tab-navigation {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .tab-navigation a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .tab-navigation a.active {
+        font-weight: bold;
+        border-top: 2px solid #fff;
+    }
+
+    main > section {
+        display: none;
+    }
+
+    main > section.active {
+        display: block;
+    }
+}
+
+/* Reset styles for PC view */
+@media (min-width: 769px) {
+    .tab-navigation {
+        display: none;
+    }
+
+    main > section {
+        display: block;
+    }
+
+    nav {
+        display: flex !important;
+    }
+
+    .menu-toggle {
+        display: none;
     }
 }
