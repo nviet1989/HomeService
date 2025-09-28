@@ -115,10 +115,11 @@ footer {
     }
 
     header {
+        height: 50px; /* Shorten the header height on mobile */
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        justify-content: space-between;
+        padding: 0 10px;
     }
 
     .logo {
@@ -152,8 +153,8 @@ footer {
         top: 0;
         right: -100%;
         height: 100%;
-        width: 250px;
-        background-color: rgba(0, 0, 0, 0.9);
+        width: 150px;
+        background-color: rgba(0, 0, 0, 0.8); /* Add transparency to the menu */
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -204,6 +205,49 @@ footer {
     main > section#contact {
         display: block;
     }
+
+    nav .logo {
+        display: block;
+        margin: 0 auto 20px auto;
+        text-align: center;
+    }
+
+    nav ul {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center the menu items vertically */
+        align-items: center; /* Center the menu items horizontally */
+        text-align: center; /* Center align the menu items */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Adjust spacing between menu items */
+    }
+
+    nav ul li.copyright {
+        list-style: none;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        margin-top: 10px;
+        pointer-events: none; /* Disable interaction */
+    }
+
+    .menu-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    .menu-footer::before {
+        content: "\00A9 "; /* Add the copyright symbol */
+    }
 }
 
 /* Reset styles for PC view */
@@ -222,5 +266,17 @@ footer {
 
     .menu-toggle {
         display: none;
+    }
+
+    nav .logo {
+        display: none; /* Hide the logo on PC */
+    }
+
+    nav ul li.copyright {
+        display: none; /* Hide copyright text on PC */
+    }
+
+    .menu-footer {
+        display: none; /* Hide the footer on PC */
     }
 }
