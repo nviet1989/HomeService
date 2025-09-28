@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -35,6 +36,34 @@ header nav ul li a {
     text-decoration: none;
 }
 
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.about, .services, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
 .banner {
     background: url('banner.jpg') no-repeat center center/cover;
     color: #fff;
@@ -59,11 +88,4 @@ header nav ul li a {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }

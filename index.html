@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Web Cá Nhân</title>
     <link rel="stylesheet" href="web/cssweb.css">
+    <script src="web/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,41 +14,37 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Trang Chủ</a></li>
-                <li><a href="#products">Sản Phẩm</a></li>
+                <li><a href="#hero">Trang Chủ</a></li>
                 <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#services">Dịch Vụ</a></li>
                 <li><a href="#contact">Liên Hệ</a></li>
             </ul>
         </nav>
     </header>
-    <section class="banner">
+    <section id="hero" class="hero">
         <h1>Chào mừng đến với Trang Web Cá Nhân</h1>
         <p>Khám phá những điều thú vị tại đây.</p>
     </section>
     <main>
-        <section id="products">
-            <h2>Sản Phẩm Nổi Bật</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="product1.jpg" alt="Product 1">
-                    <h3>Sản Phẩm 1</h3>
-                    <p>Mô tả ngắn gọn về sản phẩm 1.</p>
-                </div>
-                <div class="product-item">
-                    <img src="product2.jpg" alt="Product 2">
-                    <h3>Sản Phẩm 2</h3>
-                    <p>Mô tả ngắn gọn về sản phẩm 2.</p>
-                </div>
-            </div>
-        </section>
-        <section id="about">
+        <section id="about" class="about">
             <h2>Về Chúng Tôi</h2>
             <p>Đây là phần giới thiệu về trang web cá nhân của bạn. Bạn có thể thêm thông tin chi tiết tại đây.</p>
         </section>
-        <section id="contact">
+        <section id="services" class="services">
+            <h2>Dịch Vụ</h2>
+            <div class="service-item">
+                <h3>Dịch Vụ 1</h3>
+                <p>Mô tả ngắn gọn về dịch vụ 1.</p>
+            </div>
+            <div class="service-item">
+                <h3>Dịch Vụ 2</h3>
+                <p>Mô tả ngắn gọn về dịch vụ 2.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
             <h2>Liên Hệ</h2>
-            <p>Địa chỉ email: example@example.com</p>
-            <p>Số điện thoại: 0123-456-789</p>
+            <p>Email: example@example.com</p>
+            <p>Điện thoại: 0123-456-789</p>
         </section>
     </main>
     <footer>
