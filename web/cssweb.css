@@ -3,21 +3,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #fff; /* Change all text to white */
     scroll-behavior: smooth;
+    background-image: url('6202241.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color: transparent; /* Match the background with the web */
     color: #fff;
     padding: 10px 20px;
 }
 
 header .logo img {
-    height: 50px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
 header nav ul {
@@ -57,8 +64,12 @@ header nav ul li a {
     margin: 20px 0;
 }
 
+.solution-item {
+    text-align: center;
+}
+
 footer {
-    background-color: #000;
+    background-color: transparent; /* Match the background with the web */
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -88,4 +99,11 @@ footer {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
+}
+
+.solutions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
