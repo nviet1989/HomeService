@@ -200,7 +200,6 @@ footer {
         display: none;
     }
 
-    main > section#hero,
     main > section#about,
     main > section#contact {
         display: block;
@@ -224,30 +223,6 @@ footer {
     nav ul li {
         margin-bottom: 10px; /* Adjust spacing between menu items */
     }
-
-    nav ul li.copyright {
-        list-style: none;
-        text-align: center;
-        color: #fff;
-        font-size: 12px;
-        margin-top: 10px;
-        pointer-events: none; /* Disable interaction */
-    }
-
-    .menu-footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        padding: 10px 0;
-        font-size: 12px;
-    }
-
-    .menu-footer::before {
-        content: "\00A9 "; /* Add the copyright symbol */
-    }
 }
 
 /* Reset styles for PC view */
@@ -270,13 +245,5 @@ footer {
 
     nav .logo {
         display: none; /* Hide the logo on PC */
-    }
-
-    nav ul li.copyright {
-        display: none; /* Hide copyright text on PC */
-    }
-
-    .menu-footer {
-        display: none; /* Hide the footer on PC */
     }
 }
